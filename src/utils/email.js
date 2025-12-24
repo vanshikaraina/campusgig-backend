@@ -74,9 +74,9 @@ async function initializeTransporter() {
 }
 
 // Initialize on startup
-initializeTransporter().catch(err => {
-    console.error('Initial email setup failed:', err.message);
-});
+// initializeTransporter().catch(err => {
+//     console.error('Initial email setup failed:', err.message);
+// });
 
 export async function sendEmail(to, subject, text, html) {
     try {
