@@ -1,6 +1,6 @@
 // backend/routes/jobs.routes.js
 import express from "express";
-import razorpay from "../config/razorpayClient.js"; // ✅ ensure this file exports { razorpay }
+import {razorpay }from "../config/razorpayClient.js"; // ✅ ensure this file exports { razorpay }
 import Job from "../models/Jobs.js";
 import { auth } from "../middleware/auth.middleware.js";
 
